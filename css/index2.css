@@ -1,0 +1,114 @@
+.filter-subnav{
+    padding-top: 2em;
+    width: 100%;
+}
+
+.filter-subnav button, .filter-subnav select{
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.filter-subnav select input{
+    border-radius: 1em;
+    border: solid 1px rgba(0, 0, 0, 0.185);
+    padding: .8em 1em;
+}
+
+.filter-subnav input{
+    width: 20em;
+    border: solid 1px rgba(0, 0, 0, 0.281);
+    background-color: rgba(0, 0, 0, 0.014);
+    border-radius: 2em;
+    padding: .8em 1em;
+}
+
+.filter-subnav-cat button{
+    font-weight: 700;
+    margin-left: .3em;
+    padding: 0 1em;
+    border-radius: 3em;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.filter-subnav-fill button{
+    border-radius: 3em;
+    border: solid 1px rgba(0, 0, 0, 0.185);
+    padding: .8em 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+}
+
+.filter-subnav-fill img{
+    width: 1.3em;
+}
+
+.thumbnail-overlay{
+    position: absolute;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 0, 0, 1) 80%,    
+        rgba(0, 0, 0, 1) 100%  
+    );
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 1em 1em;
+    align-items: flex-end;
+    justify-content: flex-end;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.thumbnail-overlay button{
+    border: solid 2px rgba(249, 249, 245, .5);
+    display: flex;
+    padding: .5em .5em;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.thumbnail-overlay a{
+    margin-left: .5em;
+}
+
+.like-img{
+    width: 1em;
+}
+
+.index-picture {
+    gap: 10px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: flex-start;
+    position: relative;
+    transition: 0.5s;
+}
+
+.index-picture img{
+    transition: transform 0.3s linear;
+}
+
+.index-picture:hover img{
+    transform: scale(1.1);
+}
+
+.thumbnail-overlay:hover{
+    opacity: 1;
+}
+
+.blog-content{
+    gap: 10px;
+    display: flex;
+    padding: 10px 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}

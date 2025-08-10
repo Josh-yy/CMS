@@ -1,0 +1,9 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect all requests to index.php if the file or directory does not exist
+RewriteBase /CMS-Blogsite_2.0
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+

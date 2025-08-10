@@ -1,0 +1,38 @@
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    padding: 3em 4em;
+    margin: 0 auto;
+    border-radius: 2em;
+}
+
+.textarea-holder{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.041);
+    padding: 1em 1em;
+    padding-bottom: 4.5em;
+    justify-content: end;
+    position: relative;
+}
+
+#tinymce {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.textarea-holder button{
+    display: flex;
+    border-radius: 2em;
+    background-color: aqua;
+    padding: 1em 2em;
+    margin-top: .3em;
+    position: absolute;
+    right: .5em;
+    bottom: .5em;
+}
